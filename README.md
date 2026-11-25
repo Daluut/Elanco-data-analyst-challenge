@@ -9,6 +9,8 @@ This folder contains both parts of the challenge:
 
 ## Website Data Challenge
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Daluut/Elanco-data-analyst-challenge/blob/main/demo.ipynb) Run the whole pipeline in your browser with `demo.ipynb` (needs the challenge data).
+
 Turns the raw synthetic analytics export into cleaned, checked, analysis-ready tables, a daily summary, breakdowns and a short findings report.
 
 ## Data
