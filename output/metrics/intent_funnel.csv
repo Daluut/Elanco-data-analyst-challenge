@@ -1,0 +1,7 @@
+stage,distinct_sessions,pct_of_eligible
+1. Eligible tracked sessions,19398,1.0
+2a. Clicked Apply Now (any page),3207,0.1653
+"2b. Viewed /application (any route, incl. direct landing)",4071,0.2099
+2c. ...of which landed directly on /application,1107,0.0571
+"3. Clicked Send Email (intent, not a completed application)",1396,0.072
+3a. ...email click without any Apply Now click,290,0.0149

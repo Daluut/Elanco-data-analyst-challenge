@@ -1,0 +1,9 @@
+metric,traffic-check.example,all other sessions
+sessions,1350.0,19398.0
+distinct visitors,1350.0,14782.0
+% desktop,1.0,0.42086813073512735
+% US or SG,1.0,0.04861325909887617
+% landing on home page,1.0,0.3891122796164553
+page views per session,1.0,1.925765542839468
+% with any apply/email click,0.0,0.18027631714609754
+distinct hours of day with traffic,23.0,16.0

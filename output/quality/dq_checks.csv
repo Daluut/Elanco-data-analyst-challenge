@@ -1,0 +1,21 @@
+table,check,failures,status,note
+sessions,session_id unique in clean table,0,PASS,
+events,event_id unique in clean table,0,PASS,
+pages,page_path unique,0,PASS,
+campaigns,campaign_id unique,0,PASS,
+sessions,session_start_utc valid ISO-8601 UTC,0,PASS,
+events,every event joins to a session (referential integrity),0,PASS,
+events,event_name in allowed set,0,PASS,
+events,non-page_view events have 0 engagement seconds,0,PASS,
+events,engagement_seconds non-negative (after cleaning),0,PASS,
+sessions,every session has >= 1 page view,0,PASS,
+events,event not before its session start,0,PASS,
+events,event within 30 minutes of session start,0,PASS,
+events,event on same UTC date as session start,0,PASS,
+events,application_email_click recorded on /application,0,PASS,
+events,all page paths found in pages.csv,0,PASS,
+sessions,landing page matches first recorded event page,3,WARN,"kept; small number, may be tracking order or untracked first hit"
+sessions,campaign_id exists in campaigns.csv,0,PASS,
+sessions,campaign sessions within campaign window,0,PASS,outside-window sessions are allowed (reused links)
+sessions,reconciliation raw 20778 = clean + dropped + quarantined,0,PASS,
+events,reconciliation raw 45498 = clean + dropped + quarantined,0,PASS,

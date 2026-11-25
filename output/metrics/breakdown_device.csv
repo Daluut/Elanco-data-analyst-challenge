@@ -1,0 +1,4 @@
+device_category,sessions,page_views,sessions_apply_cta,sessions_viewing_application,sessions_email_click,share_of_sessions,apply_cta_rate,email_click_rate,email_per_application_viewer
+desktop,8164,16135,1744,2083,839,0.4209,0.2136,0.1028,0.4028
+mobile,10504,19842,1365,1858,522,0.5415,0.13,0.0497,0.2809
+tablet,730,1379,98,130,35,0.0376,0.1342,0.0479,0.2692

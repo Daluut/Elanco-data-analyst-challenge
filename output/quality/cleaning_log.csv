@@ -1,0 +1,19 @@
+table,step,rows_affected,action
+sessions,raw rows,20778,read
+sessions,exact duplicate rows,30,dropped (kept first copy)
+sessions,"same session_id, conflicting content",0,quarantined
+sessions,invalid or out-of-period start time,0,quarantined
+sessions,device_category case/whitespace fixed,60,trimmed + lower-cased (e.g. ' DESKTOP ' -> 'desktop')
+sessions,device_category not desktop/mobile/tablet,0,set to 'unknown'
+sessions,missing country_code,90,labelled 'Unknown' (kept)
+sessions,blank source/medium with a campaign_id,9,"filled from campaigns.csv, flagged"
+sessions,"blank source/medium, no campaign",36,"kept, channel = 'Unknown'"
+sessions,campaign_id not in campaigns.csv,0,"kept, flagged by check"
+sessions,suspected bot sessions (traffic-check.example),1350,kept but flagged; excluded from eligible-session metrics
+events,raw rows,45498,read
+events,exact duplicate rows,120,dropped (kept first copy)
+events,"same event_id, conflicting content",0,quarantined
+events,orphan events (no matching session),12,quarantined
+events,invalid event_timestamp_utc,8,"kept (counted via session date), flagged, excluded from sequence analysis"
+events,negative / non-numeric engagement_seconds,10,set to null (event kept)
+events,page_path not in pages.csv,0,"kept, page_group = 'unknown'"

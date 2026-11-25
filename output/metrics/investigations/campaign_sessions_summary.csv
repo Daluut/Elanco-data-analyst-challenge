@@ -1,0 +1,5 @@
+campaign_id,sessions,top_landing_page,share_on_top_landing_page,apply_cta_rate,email_click_rate
+CMP-DE-OCT,1521,/roles/data-engineer,0.763,0.2748,0.0874
+CMP-INTERVIEW-JAN,614,/interview-preparation,0.845,0.0765,0.0293
+CMP-UNI-NOV,590,/,0.449,0.1407,0.061
+(no campaign),16673,/,0.424,0.1595,0.0725

@@ -1,0 +1,4 @@
+group,sessions,email_click_rate,ci95_low,ci95_high,apply_cta_rate,viewed_application_rate,mean_page_views,pct_mobile,pct_organic_search
+Technical Analyst viewers (proxy),2729,0.0726,0.0628,0.0823,0.1938,0.1854,2.24,0.531,0.347
+Other role-page viewers,10210,0.0618,0.0571,0.0665,0.1853,0.1766,2.2,0.545,0.302
+All eligible sessions,19398,0.072,0.0683,0.0756,0.1653,0.2099,1.93,0.541,0.318

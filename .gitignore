@@ -1,0 +1,9 @@
+# Elanco's challenge data is not redistributed; place it in data/raw/ to run the pipeline
+data/raw/*
+!data/raw/.gitkeep
+# Generated row-level outputs (derived from the raw data)
+output/clean/
+output/quality/quarantine_*.csv
+__pycache__/
+*.pyc
+.DS_Store
